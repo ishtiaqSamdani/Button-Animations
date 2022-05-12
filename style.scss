@@ -1,10 +1,18 @@
 *{
     box-sizing:border-box;
+    margin: 0;
+    padding: 0;
   }
   body{
     font-family: 'Oswald', sans-serif;
-    padding:0;
-    margin:0;
+    overflow-x: hidden;
+    .background_text{
+    width: -webkit-fill-available;
+    position: absolute;
+    z-index: -1;
+    opacity: .35;
+    top: 10%;
+    }
   }
   .btn_container{
     display:grid;
