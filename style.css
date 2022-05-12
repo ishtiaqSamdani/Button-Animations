@@ -1,0 +1,349 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.btn_container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 25em) {
+  .btn_container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.btn_container .btn_div {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.btn_container .btn_div .btn {
+  color: white;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#aa36de), color-stop(#ff0091), color-stop(#ff583a), color-stop(#fcad00), to(#a8eb12));
+  background-image: linear-gradient(to right bottom, #aa36de, #ff0091, #ff583a, #fcad00, #a8eb12);
+  padding: 1rem 2rem;
+  border-radius: .25em;
+  cursor: pointer;
+}
+
+.btn_container .btn_div .btn_1 {
+  position: relative;
+  z-index: 1;
+}
+
+.btn_container .btn_div .btn_1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  -webkit-transition: -webkit-transform ease 250ms;
+  transition: -webkit-transform ease 250ms;
+  transition: transform ease 250ms;
+  transition: transform ease 250ms, -webkit-transform ease 250ms;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.btn_container .btn_div .btn_1:hover::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.btn_container .btn_div .btn_2 {
+  position: relative;
+  z-index: 1;
+}
+
+.btn_container .btn_div .btn_2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  -webkit-transition: -webkit-transform ease 250ms;
+  transition: -webkit-transform ease 250ms;
+  transition: transform ease 250ms;
+  transition: transform ease 250ms, -webkit-transform ease 250ms;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.btn_container .btn_div .btn_2:hover::after {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.btn_container .btn_div .btn_3 {
+  position: relative;
+  z-index: 1;
+}
+
+.btn_container .btn_div .btn_3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  -webkit-transition: -webkit-transform ease 250ms;
+  transition: -webkit-transform ease 250ms;
+  transition: transform ease 250ms;
+  transition: transform ease 250ms, -webkit-transform ease 250ms;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.btn_container .btn_div .btn_3:hover::after {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.btn_container .btn_div .btn_4 {
+  outline: none;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.4rem;
+  font-weight: 900;
+  position: relative;
+}
+
+.btn_container .btn_div .btn_4::after {
+  content: '';
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#aa36de), color-stop(#ff0091), color-stop(#ff583a), color-stop(#fcad00), to(#a8eb12));
+  background-image: linear-gradient(to right top, #aa36de, #ff0091, #ff583a, #fcad00, #a8eb12);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.btn_container .btn_div .btn_4:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.btn_container .btn_div .btn_5 {
+  outline: none;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.4rem;
+  font-weight: 900;
+  position: relative;
+}
+
+.btn_container .btn_div .btn_5::after {
+  content: '';
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#aa36de), color-stop(#ff0091), color-stop(#ff583a), color-stop(#fcad00), to(#a8eb12));
+  background-image: linear-gradient(to right top, #aa36de, #ff0091, #ff583a, #fcad00, #a8eb12);
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.btn_container .btn_div .btn_5::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  z-index: -1;
+  border-radius: .25em;
+}
+
+.btn_container .btn_div .btn_5:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.btn_container .btn_div .btn_6 {
+  outline: none;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.4rem;
+  font-weight: 900;
+  position: relative;
+}
+
+.btn_container .btn_div .btn_6::after {
+  content: '';
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#aa36de), color-stop(#ff0091), color-stop(#ff583a), color-stop(#fcad00), to(#a8eb12));
+  background-image: linear-gradient(to right top, #aa36de, #ff0091, #ff583a, #fcad00, #a8eb12);
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.btn_container .btn_div .btn_6::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  z-index: -1;
+  border-radius: .25em;
+}
+
+.btn_container .btn_div .btn_6:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.btn_container .btn_div .btn_7 {
+  outline: none;
+  border: 2px solid purple;
+  border-radius: 0;
+  outline: 2px solid purple;
+  outline-offset: -2px;
+  -webkit-transition: outline-offset 250ms ease-in,outline-color 0ms 100ms;
+  transition: outline-offset 250ms ease-in,outline-color 0ms 100ms;
+}
+
+.btn_container .btn_div .btn_7:hover {
+  outline-offset: 4px;
+  outline-color: #fcad00;
+}
+
+.btn_container .btn_div .btn_8 {
+  outline: none;
+  border: 2px solid purple;
+  border-radius: 0;
+  outline: 2px solid purple;
+  outline-offset: -2px;
+  -webkit-transition: outline-offset 250ms ease-in,outline-color 0ms 100ms;
+  transition: outline-offset 250ms ease-in,outline-color 0ms 100ms;
+}
+
+.btn_container .btn_div .btn_8:hover {
+  outline-color: #A8EB12;
+  outline-offset: -8px;
+}
+
+.btn_container .btn_div .btn_9 {
+  outline: none;
+  border: 2px solid purple;
+  border-radius: 0;
+  outline: 2px solid purple;
+  outline-offset: -2px;
+  -webkit-transition: outline-width 250ms ease-in;
+  transition: outline-width 250ms ease-in;
+}
+
+.btn_container .btn_div .btn_9:hover {
+  outline-width: 6px;
+  outline-offset: -8px;
+  outline-color: #fcad00;
+}
+
+.btn_container .btn_div .btn_10 {
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.btn_container .btn_div .btn_10:hover {
+  -webkit-transform: translateY(-0.5em);
+          transform: translateY(-0.5em);
+}
+
+.btn_container .btn_div .btn_11 {
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.btn_container .btn_div .btn_11:hover {
+  -webkit-transform: translateX(-0.5em);
+          transform: translateX(-0.5em);
+}
+
+.btn_container .btn_div .btn_12 {
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.btn_container .btn_div .btn_12:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */
