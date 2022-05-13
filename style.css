@@ -15,7 +15,9 @@ body .background_text {
   position: absolute;
   z-index: -1;
   opacity: .35;
-  top: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .btn_container {
